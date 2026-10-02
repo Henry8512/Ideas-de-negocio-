@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Diseños digitales originales para sublimar tazas y stickers.">
+  <title>Estampa Lab — Diseños para sublimar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-banner" role="note">
+    <span class="demo-dot" aria-hidden="true"></span>
+    DEMO DE TIENDA · Los precios y el checkout son de muestra; no se realizan cobros.
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Estampa Lab, inicio">
+      <span class="brand-mark" aria-hidden="true">e.</span>
+      <span>estampa<span class="brand-light">lab</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Diseños</a>
+      <a href="#como-funciona">Cómo funciona</a>
+    </nav>
+    <button class="cart-trigger" id="cart-open" type="button" aria-label="Abrir carrito, 0 productos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6M10 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+      <span>Carrito</span><span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ARCHIVOS DIGITALES PARA CREAR</p>
+        <h1>Una buena idea merece <em>su propia taza.</em></h1>
+        <p class="hero-description">
+          Diseños originales para sublimar, hechos para que tus regalos y proyectos
+          se vean tan especiales como la idea que los inspiró.
+        </p>
+        <a class="button button-dark" href="#catalogo">
+          Explorar diseños <span aria-hidden="true">↘</span>
+        </a>
+        <div class="hero-proof">
+          <span class="proof-stars" aria-label="Diseño hecho con cariño">✳</span>
+          <span>Ideas originales · Listas para personalizar</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Muestra decorativa de diseños para tazas">
+        <div class="hero-sun"></div>
+        <div class="hero-sticker hero-sticker-coffee">
+          <span class="sticker-spark">✦</span>
+          <span class="sticker-small">PRIMERO</span>
+          <strong>café</strong>
+          <span class="sticker-cup" aria-hidden="true">☕</span>
+          <span class="sticker-small">DESPUÉS VEMOS</span>
+        </div>
+        <div class="hero-note"><span>✿</span> Diseñado para crear</div>
+        <span class="hero-spark spark-one">✳</span>
+        <span class="hero-spark spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Características">
+      <div><span>01</span> Diseños digitales</div>
+      <div><span>02</span> Para tazas y más</div>
+      <div><span>03</span> Editables y originales</div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LA COLECCIÓN</p>
+          <h2>Diseños que dan ganas de regalar.</h2>
+        </div>
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+          <input id="search" type="search" placeholder="Buscar diseños…" aria-label="Buscar diseños">
+        </label>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="filter-list" role="group" aria-label="Filtrar por categoría">
+          <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-chip" type="button" data-filter="tazas" aria-pressed="false">Tazas</button>
+          <button class="filter-chip" type="button" data-filter="stickers" aria-pressed="false">Stickers</button>
+          <button class="filter-chip" type="button" data-filter="plantillas" aria-pressed="false">Plantillas</button>
+        </div>
+        <span class="results-count" id="results-count" aria-live="polite"></span>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-results" id="empty-results" hidden>No encontramos diseños con esa búsqueda. Prueba con otra palabra.</p>
+    </section>
+
+    <section class="how section-wrap" id="como-funciona">
+      <div class="how-intro">
+        <p class="eyebrow">DEL DISEÑO A TU PROYECTO</p>
+        <h2>Crear puede ser<br><em>así de simple.</em></h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Elige una idea</h3><p>Encuentra el diseño que conecta con tu regalo o proyecto.</p></article>
+        <article><span>02</span><h3>Personalízalo</h3><p>Adáptalo a tu producto y revisa las medidas de tu proveedor.</p></article>
+        <article><span>03</span><h3>Hazlo realidad</h3><p>Prepara tu archivo y sublima siguiendo las indicaciones de tu prensa.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div><span class="cta-flower" aria-hidden="true">✿</span><p>Una taza también puede decir mucho.</p></div>
+      <a href="#catalogo">Encuentra tu próximo diseño <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">e.</span><span>estampa<span class="brand-light">lab</span></span></a>
+    <p>Diseños digitales para crear cosas que se quedan.</p>
+    <span>© 2026 Estampa Lab · Tienda demostrativa</span>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-hidden="true">
+    <div class="drawer-heading">
+      <div><p class="eyebrow">TU SELECCIÓN</p><h2>El carrito</h2></div>
+      <button class="icon-button" id="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-items" id="cart-items" aria-live="polite"></div>
+    <div class="cart-empty" id="cart-empty"><span>✳</span><p>Tu carrito está esperando<br>una buena idea.</p><button type="button" class="text-button" id="keep-shopping">Ver diseños ↗</button></div>
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="cart-subtotal"><span>Total de muestra</span><strong id="cart-total"></strong></div>
+      <p>Moneda y precios de ejemplo. No se realizará ningún cobro.</p>
+      <button class="button button-dark checkout-button" id="checkout-open" type="button">Probar checkout <span aria-hidden="true">→</span></button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkout-modal" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="icon-button modal-close" id="checkout-close" type="button" aria-label="Cerrar">×</button>
+      <span class="modal-icon" aria-hidden="true">✳</span>
+      <p class="eyebrow">MODO DEMOSTRACIÓN</p>
+      <h2 id="checkout-title">Así se vería tu compra.</h2>
+      <p>Esta tienda todavía no está conectada a pagos ni a entrega automática. No se ha realizado ningún pedido ni cargo.</p>
+      <div class="modal-total"><span>Total de muestra</span><strong id="checkout-total"></strong></div>
+      <button class="button button-dark checkout-button" id="checkout-finish" type="button">Entendido</button>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
